@@ -7,7 +7,6 @@ WORKDIR /nest
 
 FROM base as local
 USER node
-RUN npm i
 CMD ["npm","run","start:dev"]
 
 FROM ${BUILD_ENV}
